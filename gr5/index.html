@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zespół Szkół Łączności</title>
+    <link rel="Shortcut Icon" href="assets/img/favicon.png" type="image/x-icon" media="screen">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@1,300&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/lightbox.css">
+</head>
+
+<body class="dark">
+<img class="bg-img bg-img--top" src="./assets/img/tlo-gorne.svg" alt="Tło 1">
+<img class="bg-img bg-img--left" src="./assets/img/tlo-lewe.svg" alt="Tło 1">
+<img class="bg-img bg-img--right" src="./assets/img/tlo-prawe.svg" alt="Tło 2">
+<div class="close-button"></div>
+<div class="error">Nie możemy wyświetlić strony</div>
+<aside class="corner">
+    <div class="corner__logo">
+        <img class="corner__logo-img" src="./assets/img/logo.png" alt="logo">
+    </div>
+    <button type="button" class="corner__button">
+        <i class="fa fa-phone"></i>
+        <span>Kontakt</span>
+    </button>
+</aside>
+<label class="switch">
+    <input type="checkbox">
+    <span class="slider"></span>
+</label>
+<nav class="nav">
+    <ul class="nav__menu">
+        <li class="nav__item">
+            <button
+                type="button"
+                class="nav__link nav__link--active"
+                onclick="navTo(0)">
+            </button>
+        </li>
+        <li class="nav__item">
+            <button type="button" class="nav__link" onclick="navTo(1)"></button>
+        </li>
+        <li class="nav__item">
+            <button type="button" class="nav__link" onclick="navTo(2)"></button>
+        </li>
+        <li class="nav__item">
+            <button type="button" class="nav__link" onclick="navTo(3)"></button>
+        </li>
+    </ul>
+</nav>
+<div class="page">
+    <div class="page__container">
+        <h2 class="page__title">Technik<br>informatyk</h2>
+        <p class="page__subtitle">
+            Oprogramowanie, sieci, podzespoły komputerowe
+        </p>
+        <button type="button" class="page__button"></button>
+    </div>
+    <aside class="page__navline-area">
+        <div class="page__navline page__navline--inf">
+            <div class="page__nl-circle" data-article="sk">
+                <p>Sieci Komputerowe</p>
+            </div>
+            <div class="page__nl-circle" data-article="so">
+                <p>Systemy Operacyjne</p>
+            </div>
+            <div class="page__nl-circle" data-article="sso">
+                <p>Sieciowe Systemy Operacyjne</p>
+            </div>
+            <div class="page__nl-circle" data-article="utk">
+                <p>Urządzenia Techniki Komputerowej</p>
+            </div>
+            <div class="page__nl-circle" data-article="bd">
+                <p>Bazy Danych</p>
+            </div>
+            <div class="page__nl-circle" data-article="tssi">
+                <p>Tworzenie Statycznych Stron Internetowych</p>
+            </div>
+            <div class="page__nl-circle" data-article="pods">
+                <p>Podsumowanie</p>
+            </div>
+        </div>
+    </aside>
+    <div class="page__content page__content--inf">
+        <article class="page__article page__article--inf sk">
+            <h3><span>Sieci Komputerowe</span></h3>
+            <div class="page__article-container">
+                <p>
+                    Nauka o sieciach komputerowych jest niezbędna do profesjonalnego wykonywania zawodu informatyka.
+                    Dowiesz się jak w sieci przesyłane są dane, jakie wykorzystujemy protokoły komunikacji i jak
+                    powinniśmy łączyć urządzenia sieciowe. Ponadto, nauczysz się jak zarobić kabel sieciowy oraz
+                    pokażemy Ci jak spawa się światłowody.
+                </p>
+                <div class="lightbox__section">
+                    <img
+                        src="assets/img/content/informatyk/sieci-komputerowe.png"
+                        alt="Sieci Komputerowe">
+                </div>
+            </div>
+        </article>
+        <article class="page__article page__article--inf so">
+            <h3><span>Systemy Operacyjne</span></h3>
+            <div class="page__article-container">
+                <p>
+                    Systemy operacyjne to jeden z najważniejszych przedmiotów dla przyszłego technika informatyka.
+                    Niesprawne poruszanie się po systemie MS Windows czy Linux lub całkowity brak ich znajomości
+                    skutkuje
+                    znacznym
+                    obniżeniem poziomu Twojej pracy, ale nie martw się.
+                </p>
+                <p>
+                    Podczas nauki z przedmiotu Systemy Operacyjne nauczysz się sprawnej obsługi różnych systemów,
+                    począwszy od ich instalacji na maszynie wirtualnej, która będzie towarzyszyć Ci przez cały okres
+                    nauki w Technikum Łączności, aż do konfigurowania i zarządzania nimi na rzeczywistych urządzeniach.
+                </p>
+                <div class="lightbox__section">
+                    <img
+                        src="assets/img/content/informatyk/systemy-operacyjne.png"
+                        alt="Systemy Operacyjne">
+                    <img
+                        src="assets/img/content/informatyk/systemy-operacyjne-2.png"
+                        alt="Systemy operacyjne">
+                    <img
+                        src="assets/img/content/informatyk/systemy-operacyjne-3.png"
+                        alt="Systemy operacyjne">
+                </div>
+            </div>
+        </article>
+        <article class="page__article page__article--inf sso">
+            <h3><span>Sieciowe Systemy Operacyjne</span></h3>
+            <div class="page__article-container">
+                <p>
+                    Na zajęciach z przedmiotu Sieciowe systemy operacyjne nauczysz się administrowania serwerami, takimi
+                    jak MS Windows Server czy Linux Server. Dowiesz się w jaki sposób je optymalizować pod kątem
+                    zarządzania oraz poznasz przeróżne usługi jakie oferują Ci systemy serwerowe, jak i te klienckie.
+                </p>
+                <div class="lightbox__section">
+                    <img
+                        src="assets/img/content/informatyk/sso.png"
+                        alt="Sieciowe Systemy Operacyjne">
+                    <img
+                        src="assets/img/content/informatyk/sso-2.png"
+                        alt="Sieciowe Systemy operacyjne">
+                    <img
+                        src="assets/img/content/informatyk/sso-3.png"
+                        alt="Sieciowe Systemy operacyjne">
+                </div>
+            </div>
+        </article>
+        <article class="page__article page__article--inf utk">
+            <h3><span>Urządzenia Techniki Komputerowej</span></h3>
+            <div class="page__article-container">
+                <p>
+                    Urządzenia Techniki Komputerowej to zdecydowanie najbardziej zróżnicowany przedmiot zawodowy.
+                    Poznasz tutaj podstawy elektroniki i elektrotechniki. Poznasz także budowę komputera oraz urządzeń
+                    peryferyjnych. Przeanalizujesz dogłębnie budowę każdego podzespołu oraz nauczysz się dobierać
+                    komponenty, aby móc samemu złożyć komputer.
+                </p>
+            </div>
+        </article>
+        <article class="page__article page__article--inf bd">
+            <h3><span>Bazy Danych</span></h3>
+            <div class="page__article-container">
+                <p>
+                    Podczas nauki tego przedmiotu nauczysz się w jaki sposób administrować oraz tworzyć struktury bazy
+                    danych w programach MS Access i MySQL. Dowiesz się jak projektować bazy danych w języku zapytań SQL
+                    i dogłębnie poznasz jego składnie.
+                </p>
+                <div class="lightbox__section">
+                    <img
+                        src="assets/img/content/informatyk/bazy-danych.png"
+                        alt="Bazy Danych">
+                    <img
+                        src="assets/img/content/informatyk/bazy-danych-2.png"
+                        alt="Bazy Danych">
+                </div>
+            </div>
+        </article>
+        <article class="page__article page__article--inf tssi">
+            <h3><span>Tworzenie Statycznych Stron Internetowych</span></h3>
+            <div class="page__article-container">
+                <p>
+                    Podczas zajęć nauczysz się projektowania i tworzenia stron internetowych. Dowiesz się w jaki sposób
+                    edytować czy wykonywać nowe projekty graficzne w programach takich jak Photoshop, Gimp czy Inkscape.
+                    Zgłębisz wiedzę na temat animacji i modyfikacji ścieżek audio. Na zajęciach będzie wiele ciekawych
+                    projektów do wykonywania samodzielnie jak i w grupach.
+                </p>
+                <div class="lightbox__section">
+                    <img
+                        src="assets/img/content/informatyk/tssi.png"
+                        alt="Tworzenie Statycznych Stron Internetowych">
+                    <img
+                        src="assets/img/content/informatyk/tssi-2.png"
+                        alt="Tworzenie Statycznych Stron Internetowych">
+                    <img
+                        src="assets/img/content/informatyk/tssi-3.png"
+                        alt="Tworzenie Statycznych Stron Internetowych">
+                </div>
+            </div>
+        </article>
+        <article class="page__article page__article--inf pods">
+            <h3><span>Podsumowanie</span></h3>
+            <div class="page__article-container">
+                <p>
+                    Zawód technika informatyka jest bardzo wszechstronny. Osoba taka pracując w firmie ma zwykle za
+                    zadanie rozwiązywać problemy związane z siecią, systemem komputerowym oraz samymi urządzeniami.
+                </p>
+                <p>
+                    Często jednak osoby, które ukończyły informatykę, wybierają konkretną specjalizację. Podczas nauki
+                    na tym kierunku nauczysz się programowania, administrowania systemami operacyjnymi i serwerami,
+                    zarządzania bazami danych, tworzenia grafik rastrowych i wektorowych, projektowania stron
+                    internetowych, montażu i eksploatacji urządzeń komputerowych, a nawet podstaw elektroniki.
+
+                    <a
+                        target="_blank"
+                        href="https://tl.krakow.pl/semantic.upload/5_TI%20-%20informatyk%20klasy%201-3%2021-22.pdf">
+                        Zobacz plan nauczania
+                    </a>
+                </p>
+                <div class="page__video">
+                    <iframe
+                        width="100%"
+                        height="100%"
+                        src="https://www.youtube.com/embed/J-z3JsQzFkA"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+        </article>
+    </div>
+</div>
+<div class="page">
+    <div class="page__container">
+        <h2 class="page__title">Technik<br>teleinformatyk</h2>
+        <p class="page__subtitle">
+            Sieci teleinformatyczne, telewizja
+        </p>
+        <button type="button" class="page__button"></button>
+    </div>
+    <aside class="page__navline-area">
+        <div class="page__navline page__navline--tele">
+            <div class="page__nl-circle" data-article="msiuti">
+                <p>Msiuti</p>
+            </div>
+            <div class="page__nl-circle" data-article="utk">
+                <p>Urządzenia Techniki Komputerowej</p>
+            </div>
+            <div class="page__nl-circle" data-article="st">
+                <p>Sieci Teleinformatyczne</p>
+            </div>
+            <div class="page__nl-circle" data-article="etech">
+                <p>Elektrotechnika</p>
+            </div>
+            <div class="page__nl-circle" data-article="pods">
+                <p>Podsumowanie</p>
+            </div>
+        </div>
+    </aside>
+    <div class="page__content page__content--tele">
+        <article class="page__article page__article--tele msiuti">
+            <h3><span>Montaż Sieci i Urządzeń Teleinformatycznych</span></h3>
+            <div class="page__article-container">
+                <p>
+                    Na zajęciach z montażu sieci i urządzeń teleinformatycznych będziesz montować szafy serwerowe,
+                    zaciskać wtyczki RJ-45 (8P8C) i spawać złącza światłowodowe. Dowiesz się jak działają gniazdka
+                    elektryczne, a także jakie zabezpieczenia posiada kabel elektryczny.
+                </p>
+            </div>
+        </article>
+        <article class="page__article page__article--tele utk">
+            <h3><span>Urządzenia Techniki Komputerowej</span></h3>
+            <div class="page__article-container">
+                <p>
+                    Podczas nauki tego przedmiotu dowiesz się w jaki sposób montować urządzenia komputerowe oraz ich
+                    elementy. Poznasz różnice między określonymi komponentami komputerowymi, a także podstawy działania
+                    aplikacji do obsługi maszyn wirtualnych.
+                </p>
+            </div>
+        </article>
+        <article class="page__article page__article--tele st">
+            <h3><span>Sieci Teleinformatyczne</span></h3>
+            <div class="page__article-container">
+                <p>
+                    Na tym przedmiocie poznasz rodzaje kabli teleinformatycznych oraz ich działanie. Podczas nauki
+                    poszerzysz swoją wiedzę z zakresu metod przesyłania pakietów między abonentami.
+                </p>
+            </div>
+        </article>
+        <article class="page__article page__article--tele etech">
+            <h3><span>Elektrotechnika</span></h3>
+            <div class="page__article-container">
+                <p>
+                    Na zajęciach z tego przedmiotu nauczysz się jak przepływa prąd oraz jak działają i do czego służą
+                    elementy elektroniczne. Dowiesz się także jak odczytywać i korzystać z parametrów technicznych oraz
+                    praw fizycznych.
+                </p>
+            </div>
+        </article>
+        <article class="page__article page__article--tele pods">
+            <h3><span>Podsumowanie</span></h3>
+            <div class="page__article-container">
+                <p>
+                    Podczas zajęć na kierunku technik teleinformatyk, nauczysz się montowania sieci i urządzeń
+                    transmisyjnych, instalowania i konfigurowania systemów operacyjnych, spawania światłowodów, a nawet
+                    składania komputera. Technik teleinformatyk jest specjalistą o interdyscyplinarnych kwalifikacjach
+                    zawodowych łączących umiejętności informatyka, elektronika i technika telekomunikacji.
+
+                    <a
+                        target="_blank"
+                        href="https://tl.krakow.pl/semantic.upload/dokumenty_szkoly/5_TT%20-%20teleinformatyk%20klasy%201-3%2021-22.pdf">
+                        Zobacz plan nauczania
+                    </a>
+                </p>
+                <div class="page__video">
+                    <iframe
+                        width="100%"
+                        height="100%"
+                        src="https://www.youtube.com/embed/S5tTDvOZbfU"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+        </article>
+    </div>
+</div>
+<div class="page">
+    <div class="page__container">
+        <h2 class="page__title">Technik<br>elektronik</h2>
+        <p class="page__subtitle">
+            Układy elektroniczne, pomiary
+        </p>
+        <button type="button" class="page__button"></button>
+    </div>
+    <aside class="page__navline-area">
+        <div class="page__navline page__navline--ele">
+            <div class="page__nl-circle page__nl-circle--active" data-article="eie">
+                <p>Elektrotechnika i Elektronika</p>
+            </div>
+            <div class="page__nl-circle" data-article="uie">
+                <p>Urządzenia i Instalacje Elektroniczne</p>
+            </div>
+            <div class="page__nl-circle" data-article="pee">
+                <p>Pomiary Elektryczne i Elektroniczne</p>
+            </div>
+
+            <div class="page__nl-circle" data-article="uac">
+                <p>Układy Analogowe i Cyfrowe</p>
+            </div>
+            <div class="page__nl-circle" data-article="eue">
+                <p>Eksploatacja Urządzeń Elektronicznych</p>
+            </div>
+
+            <div class="page__nl-circle" data-article="pods">
+                <p>Podsumowanie</p>
+            </div>
+        </div>
+    </aside>
+    <div class="page__content page__content--ele">
+        <article class="page__article page__article--ele eie">
+            <h3><span>Elektrotechnika i Elektronika</span></h3>
+            <div class="page__article-container">
+                <p>
+                    Na tym przedmiocie zgłębisz wiedzę z zakresu elektroniki i elektrotechniki. Nauczysz się jak
+                    wykonywać i odczytywać pomiary elektroniczne, poznasz nowe wzory fizyczne i dowiesz się jak
+                    projektować instalacje elektroniczne oraz obwody prądowe. Wszystko to przy wykorzystaniu różnego
+                    rodzaju podzespołów i urządzeń elektronicznych.
+                </p>
+            </div>
+        </article>
+        <article class="page__article page__article--ele uie">
+            <h3><span>Urządzenia i Instalacje Elektroniczne</span></h3>
+            <div class="page__article-container">
+                <p>
+                    Na lekcjach z tego przedmiotu poznasz zasady instalacji urządzeń elektronicznych, sieciowych i
+                    antenowych. Podczas zajęć poszerzysz swoją wiedzę z zakresu RTV, systemów kontroli i zabezpieczeń
+                    oraz transmisji danych.
+                </p>
+            </div>
+        </article>
+        <article class="page__article page__article--ele pee">
+            <h3><span>Pomiary Elektryczne i Elektroniczne</span></h3>
+            <div class="page__article-container">
+                <p>
+                    Na tym przedmiocie nauczysz się rozróżniać oraz stosować w praktyce przyrządy i metody pomiarowe.
+                    Podczas
+                    zajęciach będziesz wykonywać pomiary w układach prądu stałego i zmiennego.
+                </p>
+            </div>
+        </article>
+        <article class="page__article page__article--ele uac">
+            <h3><span>Układy Analogowe i Cyfrowe</span></h3>
+            <div class="page__article-container">
+                <p>
+                    Podczas zajęć z tego przedmiotu zgłębisz wiedzę z zakresu elementów półprzewodnikowych, układów
+                    liniowych i nieliniowych, a także układów kombinacyjnych i sekwencyjnych.
+                </p>
+            </div>
+        </article>
+        <article class="page__article page__article--ele eue">
+            <h3><span>Eksploatacja Urządzeń Elektronicznych</span></h3>
+            <div class="page__article-container">
+                <p>
+                    Na lekcjach z tego przedmiotu poszerzysz wiedzę z zakresu fal elektromagnetycznych oraz odbioru i
+                    parametrów sygnałów. Poznasz także systemy kontroli dostępu i zabezpieczeń oraz dowiesz się o
+                    odbiornikach radiowych i telewizyjnych.
+                </p>
+            </div>
+        </article>
+        <article class="page__article page__article--ele pods">
+            <h3><span>Podsumowanie</span></h3>
+            <div class="page__article-container">
+                <p>
+                    Podczas zajęć na kierunku technik elektronik dowiesz się jak montować i instalować układy
+                    elektroniczne. Nauczysz się jak podłączać odpowiednie okablowanie, konfigurować urządzenia sieciowe
+                    i monitoring, a nawet w jaki sposób projektować systemy automatyki i robotyki. Technik elektronik
+                    organizuje i wykonuje prace w placówkach badawczo-rozwojowych, zakładach wytwórczych i naprawczych,
+                    a inaczej mówiąc wszędzie gdzie korzystamy z elektroniki.
+
+                    <a
+                        target="_blank"
+                        href="https://tl.krakow.pl/semantic.upload/dokumenty_szkoly/5_TE%20-%20elektronik%20klasy%201-3%2021-22.pdf">
+                        Zobacz plan nauczania
+                    </a>
+                </p>
+                <div class="page__video">
+                    <iframe
+                        width="100%"
+                        height="100%"
+                        src="https://www.youtube.com/embed/P7EhBhykw-w"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+        </article>
+    </div>
+</div>
+<div class="page">
+    <div class="page__container">
+        <h2 class="page__title">Technik<br>programista</h2>
+        <p class="page__subtitle">
+            Aplikacje, algorytmy, bazy danych
+        </p>
+        <button type="button" class="page__button"></button>
+    </div>
+    <aside class="page__navline-area">
+        <div class="page__navline page__navline--pro">
+            <div class="page__nl-circle page__nl-circle--active" data-article="usk">
+                <p>Urządzenia i Systemy Komputerowe</p>
+            </div>
+            <div class="page__nl-circle" data-article="atp">
+                <p>Algorytmy i Techniki Programowania</p>
+            </div>
+            <div class="page__nl-circle" data-article="bd">
+                <p>Bazy Danych</p>
+            </div>
+            <div class="page__nl-circle" data-article="tssi">
+                <p>Tworzenie Statycznych Stron Internetowych</p>
+            </div>
+            <div class="page__nl-circle" data-article="ai">
+                <p>Aplikacje Internetowe</p>
+            </div>
+            <div class="page__nl-circle" data-article="pods">
+                <p>Podsumowanie</p>
+            </div>
+        </div>
+    </aside>
+    <div class="page__content page__content--pro">
+        <article class="page__article page__article--pro usk">
+            <h3><span>Urządzenia i Systemy Komputerowe</span></h3>
+            <div class="page__article-container">
+                <p>
+                    Na zajęciach z tego przedmiotu zgłębisz wiedzę z zakresu podstaw sieci komputerowych. Nauczysz się
+                    rozróżniania rodzajów mediów transmisyjnych, budowy modeli internetowych oraz obliczania i
+                    wykonywania operacji na sieciach.
+                </p>
+            </div>
+        </article>
+        <article class="page__article page__article--pro atp">
+            <h3><span>Algorytmy i techniki programowania</span></h3>
+            <div class="page__article-container">
+                <p>
+                    Na tym przedmiocie nauczysz się programować w takich językach jak C++ i C#. Będziesz wykonywać wiele
+                    ciekawych i angażujących projektów samodzielnie jak i w grupach.
+                </p>
+                <div class="lightbox__section">
+                    <img
+                        src="assets/img/content/programista/algorytmy.png"
+                        alt="Aplikacje Internetowe">
+                    <img
+                        src="assets/img/content/programista/algorytmy-2.png"
+                        alt="Aplikacje Internetowe">
+                </div>
+            </div>
+        </article>
+        <article class="page__article page__article--pro bd">
+            <h3><span>Bazy Danych</span></h3>
+            <div class="page__article-container">
+                <p>
+                    Podczas zajęć z tego przedmiotu nauczysz się zarządzać oraz tworzyć struktury bazy danych w
+                    programach MS Access i MySQL. Poznasz jak tworzyć podstawową składnie języka zapytań SQL.
+                </p>
+                <div class="lightbox__section">
+                    <img
+                        src="assets/img/content/programista/bazy-danych.png"
+                        alt="Bazy Danych">
+                    <img
+                        src="assets/img/content/programista/bazy-danych-2.png"
+                        alt="Bazy Danych">
+                </div>
+            </div>
+        </article>
+        <article class="page__article page__article--pro tssi">
+            <h3><span>Tworzenie statycznych stron internetowych</span></h3>
+            <div class="page__article-container">
+                <p>
+                    Podczas nauki na tym przedmiocie nauczysz się projektowania i tworzenia stron internetowych. Dowiesz
+                    się jak edytować i wykonywać nowe projekty graficzne w programach takich jak Photoshop, Gimp czy
+                    Inkscape. Będziesz wykonywać wiele ciekawych projektów.
+                </p>
+                <div class="lightbox__section">
+                    <img
+                        src="assets/img/content/programista/tssi.png"
+                        alt="Tworzenie Statycznych Stron Internetowych">
+                    <img
+                        src="assets/img/content/programista/tssi-2.png"
+                        alt="Tworzenie Statycznych Stron Internetowych">
+                    <img
+                        src="assets/img/content/programista/tssi-3.png"
+                        alt="Tworzenie Statycznych Stron Internetowych">
+                </div>
+            </div>
+        </article>
+        <article class="page__article page__article--pro ai">
+            <h3><span>Aplikacje Internetowe</span></h3>
+            <div class="page__article-container">
+                <p>
+                    Na lekcjach z tego przedmiotu nauczysz się tworzenia responsywnych stron internetowych z
+                    zastosowaniem podstaw języka JavaScript.
+                </p>
+                <div class="lightbox__section">
+                    <img
+                        src="assets/img/content/programista/aplikacje-klienckie.png"
+                        alt="Aplikacje Internetowe">
+                    <img
+                        src="assets/img/content/programista/aplikacje-klienckie-2.png"
+                        alt="Aplikacje Internetowe">
+                    <img
+                        src="assets/img/content/programista/aplikacje-klienckie-3.png"
+                        alt="Aplikacje Internetowe">
+                </div>
+            </div>
+        </article>
+        <article class="page__article page__article--pro pods">
+            <h3><span>Podsumowanie</span></h3>
+            <div class="page__article-container">
+                <p>
+                    Podczas nauki na tym kierunku nauczysz się podstaw informatyki. Zgłębisz wiedzę na temat algorytmiki
+                    i wielu języków programowania, takich jak C++, C#, Python czy JavaScript. Dodatkowo zdobędziesz
+                    wiedzę z zakresu projektowania i zarządzania bazami danych, projektowania stron internetowych i
+                    różnego rodzaju grafik. Technik programista zajmuje się opracowywaniem i wdrażaniem do użytku
+                    programów komputerowych.
+
+                    <a
+                        target="_blank"
+                        href="https://tl.krakow.pl/semantic.upload/dokumenty_szkoly/5_P%20-%20programista%20klasy%201%2021-22.pdf">
+                        Zobacz plan nauczania
+                    </a>
+                </p>
+                <div class="page__video">
+                    <iframe
+                        width="100%"
+                        height="100%"
+                        src="https://www.youtube.com/embed/RgCjt9TM-N8"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+        </article>
+    </div>
+</div>
+<div class="contact-overlay">
+    <div class="contact-overlay__button"></div>
+    <h1 class="contact-overlay__title">Kontakt</h1>
+    <p class="contact-overlay__subtitle">
+        Zapraszamy do nas!
+    </p>
+    <div class="contact-overlay__content">
+        <div class="contact-overlay__left">
+            <address class="contact-overlay__address">
+                    <span class="p">
+                        Zespół Szkół Łączności <br>
+                        ul. Monte Cassino 31 <br>
+                        30-337 Kraków <br>
+                    </span>
+                <span>
+                        sekretariat@tl.krakow.pl <br>
+                        12 269-15-57
+                    </span>
+            </address>
+            <div class="contact-overlay__socials">
+                <a href="https://pl-pl.facebook.com/zslkrakow" target="_blank" class="fa fa-facebook"
+                   style="--color: #3B5998"></a>
+                <a href="https://www.youtube.com/user/ZespolSzkolLacznosci" target="_blank" class="fa fa-youtube"
+                   style="--color: #bb2222"></a>
+            </div>
+        </div>
+        <div class="contact-overlay__map-button">
+            <span></span>
+            <p>otwórz mapkę</p>
+        </div>
+        <div class="contact-overlay__map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1357.244750891444!2d19.922039473844098!3d50.04626680763905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165b7a5a0e622b%3A0xd5d25c4b488e7d88!2zVGVjaG5pa3VtIMWBxIVjem5vxZtjaSBOciAxNCB3IFpTIMWBxIVjem5vxZtjaSB3IEtyYWtvd2ll!5e0!3m2!1spl!2spl!4v1622193989570!5m2!1spl!2spl"
+                style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <span class="contact-overlay__map-close-button"></span>
+        </div>
+    </div>
+</div>
+<div class="lightbox">
+    <span class="lightbox__close" onclick="closeLightbox()"></span>
+    <div class="lightbox__img">
+        <img
+            class="lightbox__img--img"
+            src="#"
+            alt="#">
+        <a
+            class="lightbox__img__nav lightbox__img__nav--prev"
+            onclick="prevLightbox()">&#10094;</a>
+        <a
+            class="lightbox__img__nav lightbox__img__nav--next"
+            onclick="nextLightbox()">&#10095;</a>
+    </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollToPlugin.min.js"></script>
+<script src="./js/main.js"></script>
+<script src="./js/auxiliary-functions.js"></script>
+<script src="./js/navigation.service.js"></script>
+<script src="./js/main-navigation.service.js"></script>
+<script src="./js/main-content.service.js"></script>
+<script src="./js/contact.service.js"></script>
+<script src="./js/navline.service.js"></script>
+<script src="./js/map.service.js"></script>
+<script src="./js/resize-bug.js"></script>
+<script src="./js/gestures.serice.js"></script>
+<script src="./js/lightbox.js"></script>
+</body>
+
+</html>

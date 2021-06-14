@@ -1,0 +1,94 @@
+
+.row
+{
+    padding:0;
+    margin:0;
+}
+
+.header, .footer
+{
+    background-color: #0f6da3;
+}
+
+#tytul
+{
+    color:white;
+    font-size: 6vw
+}
+
+#dane-kontaktowe
+{
+    color: white;
+}
+
+#menu
+{
+    background-color: #0f6da3;
+}
+
+#menu a
+{
+    color: white;
+}
+
+#menu a:hover
+{
+    color: #0f6da3;
+    background-color: white;
+}
+
+.navbar
+{
+    padding:0;
+    background-color: #0f6da3;
+}
+
+a
+{
+    text-decoration:none;
+}
+
+#logo-footer
+{
+    max-width:150px;
+}
+
+.zdj-opis
+{
+    position:relative;
+    margin-bottom:30px;
+}
+
+.opis-zdj
+{
+    width:100%;
+    height: 100%;
+    text-align:center;
+    top: 0px;
+    position:absolute;
+}
+
+.zdj-h
+{
+    background-color: #ff8015;
+    color:white;
+    padding:10px 20px;
+}
+
+.btn-warning
+{
+    background-color: #ff8015;
+    border: 2px solid black;
+}
+
+.btn-warning:hover
+{
+    background-color: #0f6da3;
+    border: 2px solid black;
+    color:white;
+}
+
+.footer
+{
+    margin-top:80px;
+}

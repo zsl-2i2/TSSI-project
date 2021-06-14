@@ -1,0 +1,589 @@
+#primary_text
+  *
+    box-sizing: content-box
+    margin: 0
+    padding: 0
+
+
+@mixin slider_arrow()
+    height: 50%
+    width: 5%
+    position: absolute
+    top: 25%
+    background: lightbrown
+    display: grid
+    place-items: center
+
+#main
+    display: flex
+    flex-direction: column
+    width: 100%
+
+    #header
+        position: sticky
+        top: 0px
+        z-index: 20000
+
+
+        #menu:hover
+            background-color: #fff
+            transition: 0.6s
+        #menu
+            height: 100%
+            width: 100%
+            background: rgba(255, 255, 255, .9)
+            transition: .6s ease-in-out
+            border-bottom: 1px solid #DCDCDB
+
+            #navbar
+                display: flex
+                width: 100%
+                height: 100%
+                list-style: none
+                justify-content: center
+
+                .navbar_item:hover
+                    cursor: pointer
+                    color: #fcb00f
+                    transition: 0.2s
+
+                .navbar_item
+                    text-align: center
+                    width: 15%
+                    position: relative
+                    padding: 20px
+                    margin: 10px
+                    display: grid
+                    place-items: center
+
+                    .underscore
+                        position: absolute
+                        bottom: 0
+                        background: black
+                        opacity: 0.6
+                        height: 2px
+                        width: 80%
+                        display: none
+
+                    .active
+                        display: block
+
+                .border
+                    margin-top: 10px
+                    background: black
+                    opacity: 0.6
+                    width: 5px
+
+    .slider-text-block
+        display: flex
+        flex-direction: column
+        width: 82%
+        margin-left: 9%
+        margin-right: 9%
+        height: 100%
+        align-items: center
+        justify-content: center
+        color: white
+
+
+
+    #slider
+        min-height: 400px
+        height: 50rem
+        width: 100%
+        position: relative
+        background: url('../assets/background-15.jpg')
+        background-repeat: no-repeat
+        background-position: 50% 50%
+        background-size: 110% 100%
+
+        #slider_pointers
+            position: absolute
+            width: 100%
+            bottom: 0
+            display: flex
+            justify-content: center
+
+            .slider_pointer
+                height: 10px
+                width: 40px
+                margin: 10px 5px
+                background: black
+                opacity: 0.4
+
+        #slider_arrow_previous
+            @include slider_arrow
+            left: 3%
+
+            img
+                max-width: 100%
+                height: auto
+
+        #slider_arrow_next:hover, #slider_arrow_previous:hover
+            cursor: pointer
+
+        #slider_arrow_next
+            @include slider_arrow
+            right: 3%
+
+            img
+                max-width: 100%
+                height: auto
+
+        #slider_content
+            width: 100%
+            height: 100%
+
+
+            > div
+                display: none
+                width: 100%
+                height: 100%
+
+        .active
+            opacity: 1 !important
+            display: block !important
+
+    #content
+
+        .active
+            display: block !important
+
+        #strona_glowna
+            display: none
+
+        #top-description
+            margin-top: 100px
+
+        .subject-description
+            margin-top: 80px
+            margin-bottom: 80px
+            padding: 2px 100px
+            h2.section_title
+              font-size: 1.6rem !important
+
+        .icon-title
+            font-size: 2.0rem
+
+
+        .icon-description
+            font-size: 1.2rem
+
+
+        #napisy_bloczki
+            margin-top: 100px
+
+        #kolorowe-bloczki
+            margin-bottom: 100px
+            #kolorowe-bloczki-1
+                background: linear-gradient(320deg, rgba(203,144,209,1) 0%, rgba(255,0,242,1) 100%)
+
+            #kolorowe-bloczki-2
+                background: linear-gradient(140deg, rgba(0,210,255,1) 0%, rgba(36,110,214,1) 70%)
+
+            #kolorowe-bloczki-3
+                background: linear-gradient(320deg,#f00 0%,#ee6315 100.65%) 100%
+
+            #kolorowe-bloczki-4
+                background: linear-gradient(320deg, rgba(255,91,0,1) 0%, rgba(255,211,0,1) 100%)
+
+
+            #kolorowe-bloczki-5
+                background: linear-gradient(320deg, rgba(43,255,0,1) 0%, rgba(46,83,25,1) 100%)
+
+            #kolorowe-bloczki-6
+                background: linear-gradient(320deg, rgba(255,0,194,1) 0%, rgba(95,21,125,1) 70%)
+
+        .kolorowy-bloczek
+            border-radius: 8px
+            color: white
+            transition: .6s ease-in-out
+
+        .kolorowy-bloczek:hover
+            scale: 1.03
+            transition: 0.8s
+            filter: drop-shadow(rgba(0, 0, 0, 0.5) 10px 10px 15px)
+
+
+
+        .kolorowy-bloczek p
+            text-align: center
+
+
+        #technik_informatyk
+            display: none
+
+        #technik_elektronik
+            display: none
+
+        #technik_programista
+            display: none
+
+        #technik_teleinformatyk
+            display: none
+
+        .section_title
+            text-align: center
+            margin-top: 25px
+            margin-bottom: 10vh
+
+        .center_iframe
+          display: flex
+          justify-content: center
+          padding-right: 0
+
+        iframe
+            border: 2px solid white
+            border-radius: 8px
+
+        .circle_photo
+            img
+                border-radius: 1000px
+                width: 25vw
+                border: 3px outset
+                padding: 5px
+
+        .section1
+            background-color: #404040
+            color: white
+            padding-top: 5vh
+            margin-right: 0
+
+        .section2
+            padding-top: 10vh
+            padding-bottom: 10vh
+
+        .text_direction
+          margin-top: 1.2rem !important
+        .cel_k
+            list-style-type: none
+
+        .window
+            background-color: blue
+            width: 200px
+            height: 200px
+
+        .plan
+            img
+               width: 80%
+        .waves
+
+
+            height: 100px
+            background-repeat: repeat-x
+            background-size: contain
+            background-position: center center
+            background-image: url
+            z-index: 200
+            position: absolute
+
+    @media (max-width: 1123px)
+      .section2
+        display: flex
+        flex-direction: column-reverse
+        margin: 0 auto !important
+      .text_direction
+        padding-top: 2rem
+        width: 91.6666666667% !important
+        .circle_photo
+          padding-bottom: 100px !important
+          width: 100% !important
+          display: flex
+          justify-content: center
+          img
+            justify-content: center
+            width: 35vw
+
+
+    @media (max-width: 810px)
+      .section3
+        display: flex
+        flex-direction: column
+        margin: 0 auto !important
+      .text_direction
+        width: 91.6666666667% !important
+        .circle_photo
+          width: 100% !important
+          display: flex
+          justify-content: center
+          img
+            width: 35vw
+    #offcanvasBottom
+        height: 50vh !important
+    #offcanvasBottom1
+        height: 50vh !important
+    #offcanvasBottom2
+        height: 50vh !important
+    #offcanvasBottom3
+        height: 50vh !important
+
+    #footer
+        padding-top: 5vh
+        height: 10vh
+        z-index: 300
+        color: white
+        height: 100%
+
+
+        .header_footer
+            color: #03b1fc
+            font-size: 20px
+            font-variant: small-caps
+
+        ul
+            list-style-type: none
+            padding: 0
+
+        li
+             margin-bottom: 20px
+             color: #2E7999
+        a
+            text-decoration: none
+            color: #2E7999
+        h2
+          color: #03b1fc
+
+        p
+          color: #2E7999
+        #icons_footer
+            text-align: center
+        .fa
+            margin: 20px
+
+        .kontakt
+            margin: 0
+            margin-right:  15px
+
+.ikons a
+  color: white !important
+  &:hover
+    color: #03b1fc !important
+  i
+    padding-left: 10px
+
+.fa
+    z-index: 1000
+
+.container.stopka.row.col-9.mx-auto
+    margin-top: 80px
+
+.waves
+    svg
+        position: absolute
+        z-index: -100
+
+@media (max-width: 765px)
+  .col-12.col-md-4.circle_photo
+      display: flex
+      justify-content: center
+@media (max-width: 1459px)
+  #footer
+    background-color: rgb(252,176,15) !important
+    .linki > ul > li > a
+      color: white !important
+    #kontakt
+      p
+        color: white !important
+      p.header_footer
+           color: #03b1fc !important
+    #primary_text
+      color: white !important
+
+@media (max-width: 1537px)
+  .bg_foot
+    background-color: rgb(252,176,15) !important
+@media (max-width: 450px)
+  .waves
+    display: none
+
+.image-info-animation
+    position: relative
+    width: 100%
+
+
+
+.image-info
+    display: block
+    width: 100%
+
+
+
+.image-info-overlay
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background: rgba (0,0,0, 0.6)
+    color: #fff
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+
+    opacity: 0
+    transition: opacity 0.4s
+
+
+.image-info-overlay-blur
+    backdrop-filter: blur(1px)
+    border-radius: 5px
+
+
+.image-info-overlay *
+    transform: translateY(30px)
+    transition: transform 0.4s
+
+
+.image-info-overlay:hover *
+    transform: translateY(0)
+
+.image-info-overlay:hover
+    opacity: 1
+    background-color: rgba(0, 0, 0, 0.5)
+
+
+
+.image-info-title
+    font-size: 2em
+    font-weight: bold
+    text-align: center
+
+
+
+.image-info-description
+    text-align: center
+    font-size: 1.25em
+    margin-top: 0.25em
+    margin-left: 0.5em
+    margin-right: 0.5em
+
+
+/* KONIEC TURBO ANIMACJI*/
+
+
+#slider1
+    opacity: 0
+    height: 800px
+.slider
+    opacity: 0
+    transform: scaleY(0)
+@keyframes test
+  0%{transform: scaleY(0);}
+  100%{transform: scaleY(1);}
+
+.is-visible-1
+  opacity: 1
+  transform: rotateZ(0deg)
+  animation:  slide-left 1s ease-in-out both
+
+
+@keyframes slide-left
+  0%
+    -webkit-transform: translateX(100px)
+    transform: translateX(100px)
+    opacity: 0
+
+  100%
+    -webkit-transform: translateX(0)
+    transform: translateX(0)
+    opacity: 1
+
+.is-visible-movie
+  opacity: 1
+  transform: rotateZ(0deg)
+  animation: movie-right 1s ease-in-out both
+
+
+@keyframes movie-right
+  0%
+    -webkit-transform: translateX(-100px)
+    transform: translateX(-100px)
+    opacity: 0
+
+  100%
+    -webkit-transform: translateX(0)
+    transform: translateX(0)
+    opacity: 1
+
+@media (max-width: 1422px)
+  #slider1
+      height: 550px
+  #main #slider
+      height: 35rem !important
+
+@media (max-width: 1090px)
+  #slider1
+      height: 400px
+  #main #slider
+      height: 25rem !important
+
+@media (max-width: 658px)
+  #slider1
+      height: 300px
+  #main #slider
+      min-height: 20rem !important
+      height: 20rem !important
+      .slide-title
+        font-size: 4.3rem !important
+      .slide-second-title
+        font-size: 2.3rem !important
+
+@media (max-width: 570px)
+  .row.d-flex.justify-content-center
+    margin: 0 10px !important
+  .kolorowy-bloczek
+    margin: 10px !important
+  #slider1
+      height: 250px
+  #main #slider
+      min-height: 18rem !important
+      height: 18rem !important
+
+@media (max-width: 472px)
+  #main #slider
+    min-height: 16rem !important
+    height: 16rem !important
+    .slide-title
+      font-size: 3.3rem !important
+    .slide-second-title
+      font-size: 1.8rem !important
+
+@media(max-width: 364px)
+  #slider1
+    height: 190px
+  #main #slider
+    min-height: 14rem !important
+    height: 14rem !important
+
+@media (max-width: 352px)
+  #main #slider
+    min-height: 13rem !important
+    height: 13rem !important
+    .slide-title
+      font-size: 2.3rem !important
+    .slide-second-title
+      font-size: 1.3rem !important
+
+@media (max-width: 300px)
+  #slider1
+      height: 150px !important
+  #main #slider
+    min-height: 10rem !important
+    height: 10rem !important
+
+@media (max-width: 1260px)
+  .waves
+    display: none
+
+@media (max-width: 1123px)
+  #magic_div
+    display: none
+
+@media(max-width: 1464px)
+  .section3
+    padding-bottom: 10vh
+
+@media(min-width: 1516px)
+  .bg_foot
+    background: rgba(255, 255, 255, 0) !important

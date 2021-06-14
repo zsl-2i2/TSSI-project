@@ -1,0 +1,84 @@
+body{
+	padding-top: 10px;
+	background-image: linear-gradient(white, black);
+}
+#site{
+	width: 80%;
+	padding: 0px;
+	margin: 0px auto;
+ 	background-color: white;
+ 	overflow: visible;
+}
+
+#headerText{
+	display: none;
+}
+
+#header{
+    overflow: visible;
+    z-index: 15;
+}
+
+/* occupatinName to nagłówek, gdzie jest nazwa profilu klasy */
+
+#occupationName{
+	font-size: 37px;
+    font-family:"Georgia", serif;
+	font-weight: 600;
+}
+
+/* occupatinDescription to wstęp opisujący dany profil */
+
+#occupationDescription{
+	text-align: left;
+	font-size: 25px;
+	margin-bottom: 40px;
+	font-family:"Didot", serif;  
+}
+
+/* subjectsBlock to zbiór "dużych" divów, w których są nazwy przedmiotów, obrazki i opisy */
+
+.subjectBlock{
+	margin-top: 10px;
+}
+
+/* subjectName to nazwa przedmiotu, czyli górna wyróżniona część subjectBlock */
+
+.subjectName{
+	font-size: 27px;
+	padding-bottom: 20px;
+    font-family:"Georgia", serif;
+	font-weight: 600;
+}
+
+/* subjectPhoto to div, w którym jest zdjęcie */
+
+.subjectPhoto{
+	float: left;
+	display: inline-block;
+	margin-bottom: 30px;
+}
+
+.subjectPhoto > img{
+	position: static;
+	width:75%;
+}
+
+.subjectDescription{
+	margin-bottom: 25px;
+	display: inline-block;
+	text-align: left;
+	vertical-align: middle;
+	font-size: 25px;
+	font-family:"Didot", serif;
+}
+
+.link{
+	color: black;
+	text-decoration: none;
+}
+
+.link:hover{
+	color: black;
+	text-decoration: none;
+}
